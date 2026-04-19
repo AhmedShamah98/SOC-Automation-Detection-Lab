@@ -1,0 +1,25 @@
+<dashboard version="1.1" theme="dark">
+  <label>Cyber_Attack_Monitoring</label>
+  <description>Brute Force Attack Detection Lab</description>
+  <row>
+    <panel>
+      <title>EventCode=4625</title>
+      <chart>
+        <title>Brute Force Attempts by User</title>
+        <search>
+          <query>index="main" EventCode=4625 Account_Name="blue" | eval User="blue" | stats count by User</query>
+          <earliest>-24h@h</earliest>
+          <latest>now</latest>
+          <refresh>30s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="charting.axisTitleX.visibility">visible</option>
+        <option name="charting.chart">column</option>
+        <option name="charting.chart.showDataLabels">all</option>
+        <option name="charting.chart.stackMode">stacked100</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+</dashboard>
