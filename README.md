@@ -6,7 +6,7 @@ This project demonstrates the implementation of a **Security Operations Center (
 ## 🏗️ Architecture
 - **Attacker**: Kali Linux (Metasploit Framework).
 - **Victim**: Windows 10 (Sysmon installed + Splunk Universal Forwarder).
-- **SIEM Platform**: Splunk Enterprise on Ubuntu Server.
+- **SIEM Platform**: Splunk Enterprise on Ubuntu.
 - **Alerting**: Telegram Bot Integration.
 
 ## 🚀 Key Features
